@@ -26,8 +26,8 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				stem: {
-					yellow: '#FEF7CD',
-					blue: '#1A365D',
+					yellow: '#f4ce51', // Updated to brand yellow
+					blue: '#254051',   // Updated to brand blue
 					lightBlue: '#33C3F0',
 					gray: '#F5F5F5',
 				},

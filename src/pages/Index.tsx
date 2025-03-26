@@ -22,11 +22,12 @@ const Index = () => {
     <div className={cn("transition-opacity duration-700", isLoaded ? "opacity-100" : "opacity-0")}>
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
+          {/* Updated heading with Youth for STEM Equity branding */}
           <h1 className="text-3xl md:text-4xl font-bold text-stem-blue mb-4 animate-fadeIn">
-            STEM<span className="text-stem-blue opacity-80">scape</span> Flight Ticket
+            Youth for STEM Equity - <span className="text-stem-yellow">CODE I/O HTML Challenge</span>
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto animate-fadeIn animation-delay-200">
-            Welcome to your flight ticket builder! This is the first step in your STEMscape challenge.
+            Welcome to your flight ticket builder! This is the first step in your CODE I/O challenge.
             Complete the missing parts of this ticket to continue your journey.
           </p>
           
@@ -44,12 +45,13 @@ const Index = () => {
           </div>
         </div>
         
-        {/* Plane Ticket */}
+        {/* Plane Ticket - Made more easily editable with clear comments */}
         <div className="ticket animate-fadeIn animation-delay-300">
+          {/* EDITABLE SECTION: Ticket Header - You can change the airline name below */}
           <div className="ticket-header">
             <div className="flex items-center">
               <Plane className="h-6 w-6 mr-2" />
-              <span className="text-xl font-bold">STEM Airlines</span>
+              <span className="text-xl font-bold">CODE I/O Airlines</span>
             </div>
             <div className="text-right">
               <span className="text-sm opacity-80">Boarding Pass</span>
@@ -58,19 +60,21 @@ const Index = () => {
           
           <div className="ticket-body">
             <div className="space-y-4">
+              {/* EDITABLE SECTION: Add your name below */}
               <div>
                 <p className="text-xs text-gray-500">Passenger Name</p>
                 <p className="text-lg font-medium">
-                  {/* Intentionally left blank for students to fill */}
                   <span className="bg-yellow-100 px-1">[Add your name here]</span>
                 </p>
               </div>
               
               <div className="grid grid-cols-2 gap-4">
+                {/* EDITABLE SECTION: Change the departure city if you want */}
                 <div>
                   <p className="text-xs text-gray-500">From</p>
                   <p className="font-medium">San Francisco (SFO)</p>
                 </div>
+                {/* EDITABLE SECTION: Final destination to be filled later */}
                 <div>
                   <p className="text-xs text-gray-500">To</p>
                   <div className="font-medium flex items-center">
@@ -86,6 +90,7 @@ const Index = () => {
             
             <div className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
+                {/* Date is automatically generated but can be edited */}
                 <div>
                   <p className="text-xs text-gray-500">Date</p>
                   <div className="font-medium flex items-center">
@@ -93,13 +98,15 @@ const Index = () => {
                     <span>{formattedDate}</span>
                   </div>
                 </div>
+                {/* EDITABLE SECTION: Change the flight number */}
                 <div>
                   <p className="text-xs text-gray-500">Flight</p>
-                  <p className="font-medium">STEM123</p>
+                  <p className="font-medium">CODE123</p>
                 </div>
               </div>
               
               <div className="grid grid-cols-2 gap-4">
+                {/* EDITABLE SECTION: Add boarding time */}
                 <div>
                   <p className="text-xs text-gray-500">Boarding Time</p>
                   <div className="font-medium flex items-center">
@@ -107,12 +114,14 @@ const Index = () => {
                     <span className="bg-yellow-100 px-1">[Add time]</span>
                   </div>
                 </div>
+                {/* EDITABLE SECTION: Choose your seat */}
                 <div>
                   <p className="text-xs text-gray-500">Seat</p>
                   <p className="font-medium bg-yellow-100 inline-block px-1">[Choose seat]</p>
                 </div>
               </div>
               
+              {/* EDITABLE SECTION: Choose your class */}
               <div>
                 <p className="text-xs text-gray-500">Class</p>
                 <p className="font-medium bg-yellow-100 inline-block px-1">[Economy/Business/First]</p>
@@ -120,6 +129,7 @@ const Index = () => {
             </div>
           </div>
           
+          {/* EDITABLE SECTION: Gate and Boarding Group */}
           <div className="ticket-footer">
             <div>
               <p className="text-xs text-gray-600">Gate</p>
@@ -131,7 +141,7 @@ const Index = () => {
             </div>
           </div>
           
-          {/* Barcode */}
+          {/* Barcode - This is decorative, you can leave it as is */}
           <div className="flex justify-center p-4 border-t border-dashed border-gray-300">
             <svg className="barcode" viewBox="0 0 100 30">
               <rect x="0" y="0" width="2" height="30" fill="#000"></rect>
@@ -162,7 +172,7 @@ const Index = () => {
           </div>
         </div>
         
-        {/* Instructions */}
+        {/* Instructions - Updated for CODE I/O branding */}
         <div className="mt-10 bg-white rounded-lg shadow-md p-6 animate-fadeIn animation-delay-400">
           <h2 className="text-xl font-bold text-stem-blue mb-4">Task Instructions</h2>
           <div className="space-y-4">

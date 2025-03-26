@@ -22,30 +22,39 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     { name: 'Celebrity Bio', path: '/celebrity-bio', icon: <User className="w-5 h-5" /> },
   ];
 
+  // HTML Tips with clear, simple explanations for middle schoolers
   const htmlTips = [
     {
       title: 'Basic Structure',
-      content: '<html>\n  <head>...</head>\n  <body>...</body>\n</html>'
+      content: '<!-- Basic HTML structure -->\n<html>\n  <head>...</head>\n  <body>...</body>\n</html>'
     },
     {
       title: 'Headings',
-      content: '<h1>Largest Heading</h1>\n<h2>Smaller Heading</h2>\n...\n<h6>Smallest Heading</h6>'
+      content: '<!-- Different sized headings -->\n<h1>Largest Heading</h1>\n<h2>Smaller Heading</h2>\n...\n<h6>Smallest Heading</h6>'
     },
     {
       title: 'Paragraphs',
-      content: '<p>This is a paragraph of text.</p>'
+      content: '<!-- How to write paragraphs -->\n<p>This is a paragraph of text.</p>'
     },
     {
       title: 'Images',
-      content: '<img src="image.jpg" alt="Description">'
+      content: '<!-- Adding an image -->\n<img src="image.jpg" alt="Description">'
     },
     {
       title: 'Links',
-      content: '<a href="https://example.com">Link Text</a>'
+      content: '<!-- Creating a clickable link -->\n<a href="https://example.com">Link Text</a>'
     },
     {
       title: 'Lists',
-      content: '<ul>\n  <li>Unordered Item</li>\n</ul>\n\n<ol>\n  <li>Ordered Item</li>\n</ol>'
+      content: '<!-- Bullet point list -->\n<ul>\n  <li>Unordered Item</li>\n</ul>\n\n<!-- Numbered list -->\n<ol>\n  <li>Ordered Item</li>\n</ol>'
+    },
+    {
+      title: 'Colors',
+      content: '<!-- Adding color to text -->\n<p style="color: blue;">Blue text</p>\n\n<!-- Adding background color -->\n<div style="background-color: yellow;">Yellow background</div>'
+    },
+    {
+      title: 'Text Styling',
+      content: '<!-- Bold text -->\n<b>Bold text</b> or <strong>Bold text</strong>\n\n<!-- Italic text -->\n<i>Italic text</i> or <em>Italic text</em>'
     },
   ];
 
@@ -57,8 +66,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0 flex items-center">
-                <span className="text-xl font-bold">STEM</span>
-                <span className="text-stem-yellow text-xl font-bold ml-1">Escape</span>
+                <span className="text-xl font-bold">Youth for</span>
+                <span className="text-stem-yellow text-xl font-bold ml-1">STEM Equity</span>
               </div>
               <div className="hidden md:ml-6 md:flex md:space-x-8">
                 {navLinks.map((link) => (
@@ -123,7 +132,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         </div>
       </main>
 
-      {/* HTML Tips Sidebar */}
+      {/* HTML Tips Sidebar - With enhanced tips for middle schoolers */}
       <div className={cn("tip-sidebar", !isTipSidebarOpen && "closed")}>
         <div className="p-4">
           <div className="flex justify-between items-center mb-6">
@@ -199,7 +208,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <p className="text-sm">&copy; {new Date().getFullYear()} Youth for STEM Equity</p>
             </div>
             <div>
-              <p className="text-sm">STEMscape Challenge</p>
+              <p className="text-sm">CODE I/O HTML Challenge</p>
             </div>
           </div>
         </div>

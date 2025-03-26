@@ -59,7 +59,12 @@
   }
 }
 
-/* Plane Ticket Styles */
+/* 
+======================
+  PLANE TICKET STYLES
+======================
+You can edit these styles to change how your ticket looks!
+*/
 .ticket {
   @apply relative bg-white rounded-lg shadow-lg overflow-hidden max-w-3xl mx-auto my-8 border border-gray-200;
   transition: all 0.3s ease;
@@ -70,23 +75,34 @@
   transform: translateY(-5px);
 }
 
+/* This controls the blue header of the ticket */
 .ticket-header {
   @apply bg-stem-blue text-white p-4 flex justify-between items-center;
+  /* Try changing the background color here! */
 }
 
+/* This controls the main content area of the ticket */
 .ticket-body {
   @apply p-6 grid grid-cols-1 md:grid-cols-2 gap-6;
+  /* You can add a background color here if you want! */
 }
 
+/* This controls the yellow footer of the ticket */
 .ticket-footer {
   @apply border-t border-dashed border-gray-300 p-4 bg-stem-yellow bg-opacity-30 flex justify-between items-center;
+  /* Try changing the background color here! */
 }
 
+/* This controls how the barcode looks */
 .barcode {
   @apply h-16 my-4;
 }
 
-/* Celebrity Bio Page Styles */
+/* 
+=======================
+  CELEBRITY BIO STYLES
+=======================
+*/
 .bio-container {
   @apply max-w-3xl mx-auto my-8 p-6 bg-white rounded-lg shadow-lg;
 }
@@ -95,7 +111,11 @@
   @apply border-2 border-dashed border-gray-300 rounded-lg p-4 text-center h-64 flex items-center justify-center bg-gray-50;
 }
 
-/* Tip Sidebar Styles */
+/* 
+===================
+  SIDEBAR STYLES
+===================
+*/
 .tip-sidebar {
   @apply fixed top-0 right-0 h-full bg-stem-blue text-white w-64 transform transition-transform duration-300 shadow-lg z-10;
 }
@@ -114,7 +134,11 @@
   transform: scale(1.1);
 }
 
-/* Page Transitions */
+/* 
+====================
+  PAGE TRANSITIONS
+====================
+*/
 .page-transition-enter {
   @apply opacity-0;
 }
@@ -131,7 +155,11 @@
   @apply opacity-0 transition-opacity duration-300;
 }
 
-/* Task Indicators */
+/* 
+=====================
+  TASK INDICATORS
+=====================
+*/
 .task-indicator {
   @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
 }
@@ -144,7 +172,11 @@
   @apply bg-green-100 text-green-800;
 }
 
-/* Code Snippets */
+/* 
+===================
+  CODE SNIPPETS
+===================
+*/
 .code-snippet {
   @apply font-mono text-sm bg-gray-100 p-2 rounded border border-gray-300 my-2;
 }
